@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pomodoro Timer First Brainstorm</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lab2 sample Meeting Minutes page" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h3>~April 14, 2026~</h3>
+        <h2>Brainstorming documentation</h2>
+        <nav>
+            <ol>
+                <li><a href="#attendance"><b>Attendance list</b></a></li>
+                <li><a href="#agenda"><b>Agenda</b></a></li>
+                <li><a href="#unfinished"><b>Unfinished business</b></a></li>
+                <li><a href="#new"><b>New business</b></a></li>
+                <li><a href="#comments"><b>comments / questions / concerns</b></a></li>
+                <li><a href="#media"><b>Images and multimedia</b></a></li>
+            </ol>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <ul>
+                <li><strong>John</strong> - <i>Lead</i></li>
+                <li><strong>Bob</strong> - <i>Frontend Developer</i></li>
+                <li><strong>Sally</strong> - <i>Backend Developer</i></li>
+                <li><strong>Olivia</strong> - <i>Architecture Design</i></li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <p>The agenda for the meeting is to <em>discuss</em> the ongoing project, <em>report</em> on our progress,
+                and <em>assign</em> new tasks.</p>
+        </section>
+        <section id="unfinished">
+            <h2>Unfinished business</h2>
+            <details>
+                <summary>Summary of unfinished business from last meeting</summary>
+                <div>
+                    <p>The team has yet to decide on the final design of the project.</p>
+                    <p>The team has yet to decide on the final features of the project.</p>
+                </div>
+            </details>
+        </section>
+        <section id="new">
+            <h2>New business</h2>
+            <span>The team has narrowed down to 3 prospective designs for the project. We have also gone over the
+                feature that are most popular according to user data</span>
+        </section>
+        <section id="comments">
+            <h2>comments / questions / concerns</h2>
+            <p>There are no additional comments to note.</p>
+        </section>
+        <section id="media">
+            <h2>Images and multimedia</h2>
+            <div></div><img src="agendaimage.png" alt="Meeting image" width="500"/></div>
+            <div><audio controls width="500">
+                <source src="meetingaudio.m4a" />
+                Meeting audio
+            </audio></div>
+            <div><video controls width="300" height="300">
+                <source src="meetingvideo.mp4"/>
+                Meeting video
+            </video></div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Form</h2>
+        <form>
+            <fieldset>
+                <legend>Feedback</legend>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" />
+                </p>
+
+                <p>
+                    <label for="meeting-date">Todays date:</label>
+                    <input type="date" id="meeting-date" name="meeting-date" />
+                </p>
+
+                <p>
+                    Were you present at the meeting?
+                </p>
+                <input type="radio" id="yes" name="attendance" value="yes" />
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="attendance" value="no" />
+                <label for="no">No</label>
+
+                <p>
+                    What did you think about the meeting?
+                </p>
+                <input type="checkbox" id="good" name="feedback" value="good" />
+                <label for="good">Good</label>
+                <input type="checkbox" id="unsure" name="feedback" value="unsure" />
+                <label for="unsure">Unsure</label>
+                <input type="checkbox" id="bad" name="feedback" value="bad" />
+                <label for="bad">Bad</label>
+                <input type="checkbox" id="roomforimprovement" name="feedback" value="roomforimprovement" />
+                <label for="roomforimprovement">Room for improvement</label>
+
+                <p>
+                    <label for="role">What is your current role?</label>
+                    <input list="roles" id="role" name="role" />
+                    <datalist id="roles">
+                        <option value="Lead"></option>
+                        <option value="Frontend Developer"></option>
+                        <option value="Backend Developer"></option>
+                        <option value="Architecture Design"></option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="attendance2">Will you be able to attend the next meeting?</label>
+                    <select id="attendance2" name="attendance2">
+                        <option value="">--Please choose an option--</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="unsure">Unsure</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="comments">Comments:</label><br />
+                    <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+                </p>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
