@@ -21,11 +21,12 @@ h3 {
 
 
 p {
-  color:color-mix(in srgb, purple 60%, white 40%);
+  color:color-mix(in srgb, red 60%, white 40%);
 }
 
 summary {
   color: color(display-p3 0.1 0.3 0.5);
+  height: 30px;
 }
 
 
@@ -42,7 +43,9 @@ header {
   width: 90%;
   max-width: 70vw;
   min-width: 20em;
-  padding: 5%
+  padding: 5%;
+  margin: auto;
+  position: sticky;
 }
 
 
@@ -55,4 +58,51 @@ main {
   padding-right: 15px;
   padding-bottom: 1mm;
   padding-left: 15px;
+}
+
+footer {
+  text-decoration: underline;
+  text-align: center;
+  position: relative;
+}
+
+
+section{
+    border-style:solid;
+    border-color:black;
+    border-width:5px; 
+    border-radius:10px;
+    margin: 15px 5px 15px 5px;
+    padding: 5px 15px 5px 15px;
+}
+
+ol{
+display: inline;  
+}
+
+ul{
+  display: block
+}
+
+section:hover{
+  background-color: #fff;
+}
+
+button:active {
+  color: blue;
+  background-color: black;
+}
+
+#attendance ul {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+#media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  justify-items: center;
 }
