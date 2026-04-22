@@ -1,0 +1,58 @@
+/* Primary styling sheet */
+
+
+:root {
+  --primary-default: white;
+}
+
+
+/* Color */
+h1 {
+  color: rgb(34, 79, 117);
+}
+
+h2 {
+  color: hsl(200, 50%, 40%);
+}
+
+h3 {
+  color: rgb(255, 107, 70);
+}
+
+
+p {
+  color:color-mix(in srgb, purple 60%, white 40%);
+}
+
+summary {
+  color: color(display-p3 0.1 0.3 0.5);
+}
+
+
+
+a {
+  color: var(--primary-default, white)
+
+}
+
+
+
+/* Unit */
+header {
+  width: 90%;
+  max-width: 70vw;
+  min-width: 20em;
+  padding: 5%
+}
+
+
+main {
+  margin-top: 10px;
+  margin-right: 2cm;
+  margin-bottom: 18pt;
+  margin-left: 2cm;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 1mm;
+  padding-left: 15px;
+}
