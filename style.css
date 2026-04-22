@@ -25,7 +25,7 @@ p {
 }
 
 summary {
-  color: color(display-p3 0.1 0.3 0.5);
+  color: color(srgb 0.1 0.3 0.5);
   height: 30px;
 }
 
@@ -64,6 +64,9 @@ footer {
   text-decoration: underline;
   text-align: center;
   position: relative;
+  & button {
+    border-radius: 4px;
+  }
 }
 
 
@@ -163,8 +166,13 @@ section:has(img) {
   background-color: #f5f5f5;
 }
 
-footer {
-  & button {
-    border-radius: 4px;
-  }
+
+
+.section-attendance {
+  border-radius: 1px;
+}
+
+
+section.section-attendance {
+  border: 1px solid black;
 }
