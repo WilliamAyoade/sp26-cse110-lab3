@@ -95,9 +95,9 @@ button:active {
 
 #attendance ul {
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: space-around;
-align-items: center;
+align-items: flex-start;
 }
 
 #media {
@@ -105,4 +105,66 @@ align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1px;
   justify-items: center;
+  
+}
+#media h2 {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+  #media {
+    grid-template-columns: 1fr;
+  }
+
+  nav ol {
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: transparent;
+}
+
+input[type="text"] {
+  border-color: blanchedalmond;
+}
+
+h1, h2 {
+  letter-spacing: 1px;
+}
+
+nav > ol {
+  list-style-position: inside;
+}
+
+h2 ~ p {
+  line-height: 1.5;
+}
+
+
+h2 + p {
+  font-style: italic;
+}
+
+p:hover {
+  opacity: 0.9;
+}
+
+section:has(img) {
+  background-color: #f5f5f5;
+}
+
+footer {
+  & button {
+    border-radius: 4px;
+  }
 }
